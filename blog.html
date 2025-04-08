@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF illustrator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0f1214;
+            color: white;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Background 5.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            max-width: 1200px;
+            gap: 30px;
+        }
+        
+        .article {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+        }
+        
+        .article-image {
+            flex: 0 0 250px;
+            margin-right: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .article-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .article-content {
+            flex: 1;
+        }
+        
+        .article-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .article-text {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #e0e0e0;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .arrow-down {
+            width: 40px;
+            height: 40px;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .arrow-down::after {
+            content: "∧";
+            color: white;
+            font-size: 20px;
+            transform: rotate(180deg);
+        }
+        
+        .arrow-down:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .article {
+                flex-direction: column;
+            }
+            
+            .article-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class = "header">
+            <div class="logo-text">RF Illustrator</div>
+        </div>
+        
+        <div class="content">
+            <div class="article">
+                <div class="article-image">
+                    <img src="artikel 1.jpg" alt="Worried illustrator with crystal ball">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">Is AI really coming for your illustration career? An industry expert weighs in</h2>
+                </div>
+            </div>
+            
+            <div class="article">
+                <div class="article-image">
+                    <img src="artikel 2.jpg" alt="Robot hand creating art">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">AI art: The end of creativity or the start of a new movement?</h2>
+                </div>
+            </div>
+            
+            <div class="article">
+                <div class="article-image">
+                    <img src="artikel 3.jpg" alt="Robot hand painting colorful waves">
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">Rise of the machines: How illustrators can avoid being replaced by AI</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="arrow-down" onclick="goBack()"></div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'Navbar.html';
+        }
+    </script>
+</body>
+</html>
