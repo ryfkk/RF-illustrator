@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #181818;
     color: rgb(111, 77, 38);
     line-height: 1.6;
     position: relative;
@@ -104,14 +104,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(109, 74, 24);
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #4FD1C5;
+    color: #6a4a1b;
 }
 
 /* Common Section Styles */
@@ -173,7 +173,7 @@ section {
 
 /* About Section */
 .about {
-    background-color: rgba(10, 10, 20, 0.3);
+    background-color: auto;
 }
 
 .about-content {
@@ -217,7 +217,7 @@ section {
 
 /* Blog Section */
 .blog {
-    background-color: rgba(10, 10, 20, 0.3);
+    background-color: auto;
 }
 
 .blog-cards {
@@ -299,7 +299,7 @@ section {
 }
 
 .send-button {
-    background-color: #4FD1C5;
+    background-color: #725419;
     color: black;
     border: none;
     padding: 15px;
@@ -311,7 +311,7 @@ section {
 }
 
 .send-button:hover {
-    background-color: #3ABAB4;
+    background-color: #603d13;
 }
 
 /* Footer */
@@ -336,13 +336,13 @@ footer {
 }
 
 .social-links a {
-    color: white;
+    color: rgb(110, 71, 21);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #4FD1C5;
+    color: #634614;
 }
 
 /* Responsive Design */
