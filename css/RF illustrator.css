@@ -202,7 +202,7 @@ section {
     overflow: hidden;
     height: 500px;
     transition: transform 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(116, 61, 14, 0.46);
 }
 
 .portfolio-item:hover {
@@ -231,13 +231,13 @@ section {
 }
 
 .blog-card {
-    background-color: rgba(26, 26, 26, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
     max-width: 450px;
     transition: transform 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(107, 56, 14, 0.399);
 }
 
 .blog-card:hover {
@@ -286,7 +286,7 @@ section {
 .contact-form input, 
 .contact-form textarea {
     padding: 15px;
-    background-color: rgba(26, 26, 26, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     border: none;
     border-radius: 5px;
     color: white;
