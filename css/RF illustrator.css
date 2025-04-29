@@ -134,36 +134,36 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 80px); /* Accounting for header height */
-    padding-top: 100px; /* Add space from top */
+    min-height: calc(100vh - 80px);
+    padding-top: 100px; 
 }
 
 .home-content {
     display: flex;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start; 
     max-width: 1200px;
     width: 100%;
     padding: 0 50px;
-    gap: 100px; /* Gap between image and text */
+    gap: 100px; 
 }
 
 .profile-container {
     flex-shrink: 0;
-    margin-left: 40px; /* Adjusted margin */
+    margin-left: 40px; 
 }
 
 .profile-image {
-    width: 320px; /* Adjusted size of the image */
+    width: 320px; 
     height: auto;
     display: block;
-    border-radius: 10px; /* Add rounded corners */
+    border-radius: 10px; 
 }
 
 .bio-text {
     max-width: 700px;
     font-size: 24px;
     line-height: 1.5;
-    margin-top: 80px; /* Adjusted to align with image */
+    margin-top: 80px; 
 }
 
 .bio-text p {
